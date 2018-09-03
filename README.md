@@ -2,17 +2,16 @@
 
 architecture principle
 
-scalable. easy to extend feature. 
-simpler dependency graph.
-
 architecture aspect
 ## folder structure
 * locate code quickly
 * near-term view
 * long-term vision
+* simplier dependency graph
+* scalable
 
 ### structure 
-#### feature module
+#### Feature module
 * don't depend on another feature module
 * only depend on shared module
 
@@ -31,12 +30,16 @@ architecture aspect
     -- components/
     -- directives/
     -- pipes/
+    -- resolvers/
+    -- guards/
 
 #### core module
 * used only once
 * used globally
-* used by app
+* used by root app
+* singleton service
 
 -- core
     -- auth/
     -- http/
+    
